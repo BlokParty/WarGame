@@ -165,7 +165,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 98991860}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -307,7 +307,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 129191557}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -397,62 +397,6 @@ Transform:
   m_Father: {fileID: 770551507}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &154621416
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1762879767}
-    m_Modifications:
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.0000011170865
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.0871558
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.9961947
-      objectReference: {fileID: 0}
-    - target: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 23360661168110052, guid: c438b02b673162a40a7f10172130bf6b,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5ca3904d504db884d9feb9fe635bffbb, type: 2}
-    - target: {fileID: 23372334284202194, guid: c438b02b673162a40a7f10172130bf6b,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dfbf5f17b5755ce4499b585f8e588b12, type: 2}
-    - target: {fileID: 1765285807440362, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &188613765
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,10 +408,9 @@ GameObject:
   - component: {fileID: 188613770}
   - component: {fileID: 188613769}
   - component: {fileID: 188613768}
-  - component: {fileID: 188613767}
   - component: {fileID: 188613771}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -487,22 +430,6 @@ Transform:
   m_Father: {fileID: 190191667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &188613767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 188613765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrag: 0
-  enableDropAnimation: 1
-  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
-  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
-  prefabDragToSpawn: {fileID: 0}
 --- !u!65 &188613768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -513,7 +440,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.66, y: 3.88, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &188613769
 MeshRenderer:
@@ -521,7 +448,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 188613765}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -635,7 +562,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 190191666}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -708,10 +635,9 @@ GameObject:
   - component: {fileID: 217386933}
   - component: {fileID: 217386932}
   - component: {fileID: 217386931}
-  - component: {fileID: 217386930}
   - component: {fileID: 217386934}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,22 +657,6 @@ Transform:
   m_Father: {fileID: 1044955413}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &217386930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 217386928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrag: 0
-  enableDropAnimation: 1
-  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
-  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
-  prefabDragToSpawn: {fileID: 0}
 --- !u!65 &217386931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -757,7 +667,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.66, y: 3.88, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &217386932
 MeshRenderer:
@@ -765,7 +675,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217386928}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -879,7 +789,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 249316864}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -952,10 +862,9 @@ GameObject:
   - component: {fileID: 362655043}
   - component: {fileID: 362655042}
   - component: {fileID: 362655041}
-  - component: {fileID: 362655040}
   - component: {fileID: 362655044}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -975,22 +884,6 @@ Transform:
   m_Father: {fileID: 249316865}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &362655040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 362655038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrag: 0
-  enableDropAnimation: 1
-  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
-  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
-  prefabDragToSpawn: {fileID: 0}
 --- !u!65 &362655041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1001,7 +894,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.6, y: 3.88, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &362655042
 MeshRenderer:
@@ -1009,7 +902,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 362655038}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1099,34 +992,6 @@ Transform:
   m_Father: {fileID: 1941093506}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &729642145
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 729642146}
-  m_Layer: 0
-  m_Name: PlayingCardHand
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &729642146
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 729642145}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1762879767}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770551506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,10 +1003,9 @@ GameObject:
   - component: {fileID: 770551511}
   - component: {fileID: 770551510}
   - component: {fileID: 770551509}
-  - component: {fileID: 770551508}
   - component: {fileID: 770551512}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1161,22 +1025,6 @@ Transform:
   m_Father: {fileID: 98991861}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &770551508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 770551506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrag: 0
-  enableDropAnimation: 1
-  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
-  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
-  prefabDragToSpawn: {fileID: 0}
 --- !u!65 &770551509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1187,7 +1035,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.6, y: 3.88, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &770551510
 MeshRenderer:
@@ -1195,7 +1043,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 770551506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1268,10 +1116,9 @@ GameObject:
   - component: {fileID: 789710429}
   - component: {fileID: 789710428}
   - component: {fileID: 789710427}
-  - component: {fileID: 789710426}
   - component: {fileID: 789710430}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1291,22 +1138,6 @@ Transform:
   m_Father: {fileID: 1944987451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &789710426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 789710424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrag: 0
-  enableDropAnimation: 1
-  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
-  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
-  prefabDragToSpawn: {fileID: 0}
 --- !u!65 &789710427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1317,7 +1148,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.6, y: 3.88, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &789710428
 MeshRenderer:
@@ -1325,7 +1156,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789710424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1467,7 +1298,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 839523075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1540,10 +1371,9 @@ GameObject:
   - component: {fileID: 955043245}
   - component: {fileID: 955043244}
   - component: {fileID: 955043243}
-  - component: {fileID: 955043242}
   - component: {fileID: 955043246}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1563,22 +1393,6 @@ Transform:
   m_Father: {fileID: 839523076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &955043242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 955043240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrag: 0
-  enableDropAnimation: 1
-  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
-  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
-  prefabDragToSpawn: {fileID: 0}
 --- !u!65 &955043243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1587,9 +1401,9 @@ BoxCollider:
   m_GameObject: {fileID: 955043240}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.6, y: 3.88, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &955043244
 MeshRenderer:
@@ -1597,7 +1411,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 955043240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1747,7 +1561,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1044955412}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1820,7 +1634,8 @@ GameObject:
   - component: {fileID: 1202344112}
   - component: {fileID: 1202344111}
   - component: {fileID: 1202344110}
-  - component: {fileID: 1202344109}
+  - component: {fileID: 1202344113}
+  - component: {fileID: 1202344114}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -1841,32 +1656,6 @@ Transform:
   m_Father: {fileID: 1651013761}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1202344109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1202344107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e23767bc3a52034cbd29aae80bcf47c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  content: {fileID: 1202344108}
-  arrangeAnimationTimer: 0.5
-  autoArrangeTimer: 0
-  maxVisable: -1
-  ignoreDisabledChildren: 0
-  controlChildrenWorldScale: 0
-  childrenWorldScale: {x: 1, y: 1, z: 1}
-  controlChildrenWorldEularAngles: 0
-  childrenWorldEularAngles: {x: 0, y: 0, z: 0}
-  firstChildLocalPosition: {x: 0, y: 0, z: 0}
-  dimensionLimits: 
-  dimensionSpacings:
-  - {x: 0, y: 0, z: 0}
-  dimensionIsSymmetric: []
-  dimensionStartFromCenter: 
 --- !u!65 &1202344110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1877,7 +1666,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1, z: 3.28}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1202344111
 MeshRenderer:
@@ -1885,7 +1674,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1202344107}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1921,6 +1710,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1202344107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1202344113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202344107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3180448be083ad74187e3ec96022088e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: {fileID: 1202344108}
+  arrangeAnimationTimer: 0.5
+  autoArrangeTimer: 0
+  maxVisable: -1
+  ignoreDisabledChildren: 0
+  controlChildrenWorldScale: 0
+  childrenWorldScale: {x: 1, y: 1, z: 1}
+  controlChildrenWorldEularAngles: 0
+  childrenWorldEularAngles: {x: 0, y: 0, z: 0}
+  firstChildLocalPosition: {x: 0, y: 0, z: 0}
+  dimensionLimits: 
+  dimensionSpacings:
+  - {x: 0, y: 0, z: 0}
+  dimensionIsSymmetric: []
+  dimensionStartFromCenter: 
+  warRuleManager: {fileID: 2040654980}
+--- !u!114 &1202344114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202344107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableDrag: 0
+  enableDropAnimation: 0
+  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
+  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
+  prefabDragToSpawn: {fileID: 0}
 --- !u!1 &1231876550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,8 +1993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 1608639733}
-  arrangeAnimationTimer: 0.5
-  autoArrangeTimer: 1
+  arrangeAnimationTimer: 0.0001
+  autoArrangeTimer: 0.0001
   maxVisable: -1
   ignoreDisabledChildren: 0
   controlChildrenWorldScale: 1
@@ -2175,11 +2007,6 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   dimensionIsSymmetric: []
   dimensionStartFromCenter: 
---- !u!4 &1646852986 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4529378151472498, guid: c438b02b673162a40a7f10172130bf6b,
-    type: 2}
-  m_PrefabInternal: {fileID: 154621416}
 --- !u!1 &1651013760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2204,8 +2031,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651013760}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.54387, y: -5.180001, z: -10}
-  m_LocalScale: {x: 3.8653622, y: 3.8653634, z: 3.8653634}
+  m_LocalPosition: {x: 0.54387, y: -9.87, z: -10}
+  m_LocalScale: {x: 4, y: 4, z: 3}
   m_Children:
   - {fileID: 1017074122}
   - {fileID: 1202344108}
@@ -2284,7 +2111,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1733735198}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2358,7 +2185,7 @@ GameObject:
   - component: {fileID: 1762879769}
   - component: {fileID: 1762879768}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2373,9 +2200,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 729642146}
-  - {fileID: 1646852986}
+  m_Children: []
   m_Father: {fileID: 129191558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2435,10 +2260,9 @@ GameObject:
   - component: {fileID: 1941093510}
   - component: {fileID: 1941093509}
   - component: {fileID: 1941093508}
-  - component: {fileID: 1941093507}
   - component: {fileID: 1941093511}
   m_Layer: 0
-  m_Name: Selector
+  m_Name: HandZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2458,22 +2282,6 @@ Transform:
   m_Father: {fileID: 1733735199}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1941093507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1941093505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5611e9f9e031394c97ba3713e7c2b79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableDrag: 0
-  enableDropAnimation: 1
-  dragWorldPositionOffset: {x: 0, y: 0, z: 0}
-  dragWorldScaleOffset: {x: 0, y: 0, z: 0}
-  prefabDragToSpawn: {fileID: 0}
 --- !u!65 &1941093508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2484,7 +2292,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.6, y: 3.88, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1941093509
 MeshRenderer:
@@ -2492,7 +2300,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1941093505}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2606,7 +2414,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1944987450}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2729,7 +2537,7 @@ MonoBehaviour:
   currentPlayer: {fileID: 0}
   someoneHasWon: 0
   numberOfPasses: 0
-  canStart: 0
+  canStart: 1
   canEnd: 0
   canRestart: 0
 --- !u!4 &2040654981
@@ -2780,7 +2588,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardNumber: 0
   playerParent: {fileID: 1017074121}
-  player: {fileID: 0}
   cardToSpawn: {fileID: 0}
   cardPrefab: {fileID: 1765285807440362, guid: c438b02b673162a40a7f10172130bf6b, type: 2}
   board: {fileID: 1202344107}

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{08040F8A-BE5E-F84B-7CE2-9F08EB1167BF}</ProjectGuid>
+    <ProjectGuid>{8D0331E3-96E1-E990-CC8C-ADA6A7F554F4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -55,16 +55,16 @@
   <ItemGroup>
      <Compile Include="Assets\PlayTable\Game Framework\Tools\Editor\PTMenu.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/TestProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/WarGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/TestProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/WarGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/TestProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/WarGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/TestProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/WarGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity.2.5F1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -307,7 +307,7 @@
  <HintPath>C:/Program Files/Unity.2.5F1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="PlayTable">
- <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/TestProject/Assets/PlayTable/SDK/PlayTable.dll</HintPath>
+ <HintPath>C:/Users/FunkyMonkey/Documents/GitHub/WarGame/Assets/PlayTable/SDK/PlayTable.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/FunkyMonkey/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -354,7 +354,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{4CE07701-134F-9DD0-F36C-F385BB4D61DF}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{3297F5B8-6720-CE85-1023-9826839C3E42}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

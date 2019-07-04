@@ -890,17 +890,20 @@ namespace PlayTable
 
                 foreach (Collider collider in collidersToDrag)
                 {
-                    PTLocalInput localInput = collider.GetComponent<PTLocalInput>();
-                    bool canAddToDraggables = localInput && localInput.enableDrag;
-
-                    if (canAddToDraggables)
+                    if (collider)
                     {
-                        touch.AddFollower(collider, localInput.dragWorldPositionOffset);
-                    }
+                        PTLocalInput localInput = collider.GetComponent<PTLocalInput>();
+                        bool canAddToDraggables = localInput && localInput.enableDrag;
 
-                    if (Camera.main.orthographic)
-                    {
-                        //resize object
+                        if (canAddToDraggables)
+                        {
+                            touch.AddFollower(collider, localInput.dragWorldPositionOffset);
+                        }
+
+                        if (Camera.main.orthographic)
+                        {
+                            //resize object
+                        }
                     }
                 }
 
@@ -1442,7 +1445,8 @@ namespace PlayTable
             }
         }
         public List<PTTouchFollower> followers { get; private set; }
-        public bool canPenetrate = true;
+        //Why is this being defined here?
+        public bool canPenetrate = false;
         //public bool hasDropAnimation = false;
 
         /// <summary>

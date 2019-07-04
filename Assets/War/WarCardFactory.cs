@@ -5,21 +5,22 @@ using PlayTable;
 
 public class WarCardFactory : Singleton<WarCardFactory>
 {
-
-    private WarCardFactory[] cards = new WarCardFactory[52];
     private int cardsPerPlayer;
     private int deckSize = 52;
     private Vector3 boardPosition;
+
     public int cardNumber;
     public GameObject playerParent;
 
     [SerializeField]
-    GameObject player, cardToSpawn;
+    GameObject cardToSpawn;
 
     [SerializeField]
     GameObject cardPrefab, board, deck;
 
-  //  parent = gameObject.transform;
+    
+    private const int cardMaxValue = 13;
+    private const int numberOfSuits = 4; 
 
 
     // Use this for initialization
@@ -28,7 +29,6 @@ public class WarCardFactory : Singleton<WarCardFactory>
         playerParent = PTTableTop.players[0].transform.parent.gameObject;
         spawnDeck();
         distributeCards();
-
     }
 	
 	// Update is called once per frame
@@ -41,9 +41,25 @@ public class WarCardFactory : Singleton<WarCardFactory>
     {
         for(int i = 0;i< deckSize; ++i)
         {
-            cardToSpawn = Instantiate(cardPrefab, deck.transform);
+            //Spawn all cards, set each card's parent to the deck game object
+           // cardToSpawn = Instantiate(cardPrefab, deck.transform);
         }
+
+        for (int i = 0; i < cardMaxValue; ++i)
+        {
+            for (int j = 0; j < numberOfSuits; ++j)
+            {
+
+                //Spawn all cards, set each card's parent to the deck game object
+                cardToSpawn = Instantiate(cardPrefab, deck.transform);
+                cardToSpawn.transform.GetComponent<WarCard>().value = i;
+                cardToSpawn.transform.GetComponent<WarCard>().suit = (Suit)j;
+
+            }
+        }
+
     }
+
 
     public void distributeCards()
     {

@@ -59,7 +59,6 @@ public class WarRuleManager : PTRuleManager_TurnBased
 
     protected override IEnumerator GameStart()
     {
-        print("Game Starting");
         canStart = false;
         DeterminePlayerOrder();
         yield return new WaitForSeconds(1);
@@ -86,7 +85,6 @@ public class WarRuleManager : PTRuleManager_TurnBased
         if (numberOfPasses >= orderOfPlayers.Count)
         {
             canRestart = true;
-            numberOfPasses = 0;
             yield return null;
         }
         else
@@ -124,7 +122,10 @@ public class WarRuleManager : PTRuleManager_TurnBased
         Debug.Log("It's" + player.name + "'s turn");
         yield return null;
     }
-
+   
+    /// <summary>
+    /// Determine the player Order
+    /// </summary>
     void DeterminePlayerOrder()
     {
         PTPlayer[] playerArray = new PTPlayer[PTTableTop.players.Length];
@@ -141,4 +142,7 @@ public class WarRuleManager : PTRuleManager_TurnBased
         }
 
     }
+
+
+
 }
